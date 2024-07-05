@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEWS</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             padding: 0%;
             margin: 0%;
@@ -19,7 +19,7 @@
         }
         header{
             width: 99vw;
-            min-height: 7%;
+            min-height: 10%;
             display: flex;
             justify-content: space-between; 
             align-items: center;
@@ -33,7 +33,7 @@
         img{
             width: 100px;
             height: 10%;
-            margin-left: 20px;
+            margin: 8px 0 8px 20px;
             align-items: center;
             justify-content: center;
         }
@@ -48,11 +48,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto 30px;
-            font-size: 1.5rem;
+            margin: auto 40px;
+            font-size: 1.8rem;
         }
         li a:last-child{
-            margin-right: 10px;
+            margin-right: 40px;
         }
         li a{
             text-decoration: none;
@@ -64,11 +64,41 @@
             padding: 6px;
             background-color: white;
         }
+        /* nav list*/
+        .list{
+            display: block;
+            position: relative;
+            margin-left: -10px;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding: 7px 0 7px 0px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 1.6rem;
+            display: block;
+            padding-left:7px;
+            text-align: center;
+            transition: all 0.4s linear;
+            }
+        .child a:hover{
+            background-color: white;
+            padding: 0 6px 0 6px;           
+            }
+        .list:hover .child{
+            display: block;
+            }        
         /* button & hover*/
         button{
             font-weight: 700;
             text-align: center;
             font-size: 1rem;
+            margin-right: 10px;
             transition: all 0.4s linear 0s;
         }
         button a{
@@ -83,36 +113,8 @@
             color: white;
             font-size: 1.2rem;
             font-weight: bold;
-
         }
-        /* nav list*/
-        .list{
-            display: block;
-            position: relative;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            width: 100%;
-        }
-        .child a{
-            color: black;
-            font-size: 1.4rem;
-            display: block;
-            text-align: center;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            background-color: white;
-            padding: 0;            
-        }
-        .list:hover .child{
-            display: block;
-        }
+        /*news*/
         section{
             color: white;
         }
@@ -143,7 +145,99 @@
         hr{
             border: 2px solid brown;
         }
-        /* for phone*/
+       /* for phone desktop*/
+        @media(max-width:900px){
+        header{
+            width: 100vw;
+            min-height: 13%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        img{
+            width: 80px;
+            height: 80px;
+            margin-left: 7px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 9px;
+            font-size: 1.7rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 4px;
+            background-color: white;
+        }
+        /* nav list*/
+            .list{
+            display: block;
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding: 7px 0 7px 0px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 1.7rem;
+            display: block;
+            padding-left:7px;
+            text-align: center;
+            transition: all 0.4s linear;
+            }
+        .child a:hover{
+            background-color: white;
+            padding: 0 4px 0 4px;           
+            }
+        .list:hover .child{
+            display: block;
+            }        
+
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 1rem;
+            margin-left: -7px;
+            margin-right: 7px;
+            transition: all 0.4s linear 0s;
+            width: 90px;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        }
+        /* for phone normal view*/
         @media(max-width:600px){
             header{
             width: 100vw;
@@ -157,7 +251,7 @@
         img{
             width: 60px;
             height: 70px;
-            margin-left: 10px;
+            margin-left: 7px;
         }
         /* nav & hover*/
         nav{
@@ -167,10 +261,10 @@
         li{
             list-style-type: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            margin: auto 5px;
-            font-size: 0.8rem;
+            margin: auto 10px;
+            font-size: 1.1rem;
         }
         li a{
             text-decoration: none;
@@ -182,11 +276,40 @@
             padding: 2px;
             background-color: white;
         }
+       /* nav list*/
+        .list{
+            display: block;
+            position: relative;
+            margin-left: -14px;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 1rem;
+            display: block;
+            text-align: center;
+            transition: all 0.4s linear;
+            }
+        .child a:hover{
+            background-color: white;
+            padding: 0 0px 0 0px;           
+            }
+        .list:hover .child{
+            display: block;
+            }        
         /* button & hover*/
         button{
             font-weight: 700;
             text-align: center;
             font-size: 0.7rem;
+            margin-left: -7px;
+            margin-right: 7px;
             transition: all 0.4s linear 0s;
             width: 60px;
         }
@@ -202,34 +325,6 @@
             color: white;
             font-size: 0.7rem;
             font-weight: bold;
-        }
-       /* nav list*/
-        .list{
-            display: block;
-            position: relative;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            width: 100%;
-        }
-        .child a{
-            color: black;
-            font-size: 0.8rem;
-            display: block;
-            text-align: center;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            background-color: white;
-            padding: 0;            
-        }
-        .list:hover .child{
-            display: block;
         }
         .contents{
             font-size: 1.2rem;
@@ -259,7 +354,7 @@
                 COURSE
             </a>
             <div class="child">
-                <a href="">B.SC.CS</a>
+                <a href="https://phenoix13.github.io/cs-home-page/">B.SC.CS</a>
             </div>
             </li>
             <li><a href="https://phenoix13.github.io/kasc-news/">
