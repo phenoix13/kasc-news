@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEWS</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             padding: 0%;
             margin: 0%;
@@ -31,17 +31,17 @@
             align-items: center;
         }
         img{
-            width: 100px;
-            height: 10%;
+            width: 7rem;
+            height: 7rem;
             margin: 8px 0 8px 20px;
             align-items: center;
             justify-content: center;
         }
-       /* nav & hover*/
-       nav{
+        /* nav & hover*/
+        nav{
             display: flex;
             flex-direction: row;
-            margin-left: -30px;
+            margin-left: 20rem;
         }
         li{
             list-style-type: none;
@@ -51,72 +51,63 @@
             margin: auto 40px;
             font-size: 1.8rem;
         }
-        li a:last-child{
-            margin-right: 40px;
-        }
         li a{
             text-decoration: none;
+            padding: 10px;
             color: white;
             transition: all 0.4s linear;
         }
         li a:hover{
             color: black;
-            padding: 6px;
+            padding: 10px;
             background-color: white;
-        }
+        }       
         /* nav list*/
         .list{
-            display: block;
-            position: relative;
-            margin-left: -10px;
+            display: inline-block;
         }
         .child{
             position: absolute;
             display: none;
             background-color: white;
             z-index: 1;
-            padding: 7px 0 7px 0px;
-            width: 100%;
         }
         .child a{
             color: black;
-            font-size: 1.6rem;
             display: block;
-            padding-left:7px;
-            text-align: center;
+            padding: 10px;
             transition: all 0.4s linear;
-            }
+        }
         .child a:hover{
-            background-color: white;
-            padding: 0 6px 0 6px;           
-            }
-        .list:hover .child{
+            color: white;
+            background-color: black;
+        }
+        .list:hover .child {
             display: block;
-            }        
+        }
         /* button & hover*/
         button{
             font-weight: 700;
             text-align: center;
             font-size: 1rem;
-            margin-right: 10px;
+            margin-right: 20px;
             transition: all 0.4s linear 0s;
         }
         button a{
             color: black;
             text-decoration: none;
+            font-size: 1.5rem;
         }
         button:hover{
             border: 2px solid;
-            border-radius: 5px;
+            border-radius: 10px;
             border-color: aqua;
             background-color: blue;
             color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
         }
         hr{
-            border: 2px solid brown;
-        }     
+            border: 2.5px solid brown;
+        }   
         /*news*/
         section{
             color: white;
@@ -146,20 +137,11 @@
             margin: 15px;
         }
        
-       /* for phone desktop*/
-        @media(max-width:900px){
-        header{
-            width: 100vw;
-            min-height: 13%;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            overflow: hidden; 
-        }
-        /* logo and name*/
+    /* for phone desktop*/
+    @media(max-width:900px){
         img{
-            width: 80px;
-            height: 80px;
+            width: 6.5rem;
+            height: 6.5rem;
             margin-left: 7px;
         }
         /* nav & hover*/
@@ -173,7 +155,7 @@
             justify-content: center;
             align-items: center;
             margin: auto 9px;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
         li a{
             text-decoration: none;
@@ -182,90 +164,70 @@
         }
         li a:hover{
             color: black;
-            padding: 4px;
+            padding: 10px;
             background-color: white;
         }
         /* nav list*/
-            .list{
-            display: block;
-            position: relative;
+        .list{
+            display: inline-block;
         }
         .child{
             position: absolute;
             display: none;
             background-color: white;
             z-index: 1;
-            padding: 7px 0 7px 0px;
-            width: 100%;
         }
         .child a{
             color: black;
-            font-size: 1.7rem;
             display: block;
-            padding-left:7px;
-            text-align: center;
+            padding: 10px;
             transition: all 0.4s linear;
-            }
+        }
         .child a:hover{
-            background-color: white;
-            padding: 0 4px 0 4px;           
-            }
-        .list:hover .child{
+            color: white;
+            background-color: black;
+        }
+        .list:hover .child {
             display: block;
-            }        
-
+        }
         /* button & hover*/
         button{
-            font-weight: 700;
             text-align: center;
-            font-size: 1rem;
-            margin-left: -7px;
-            margin-right: 7px;
             transition: all 0.4s linear 0s;
-            width: 90px;
         }
         button a{
             color: black;
             text-decoration: none;
+            font-size: 1.1rem;
         }
         button:hover{
             border: 2px solid;
-            border-radius: 5px;
+            border-radius: 10px;
             border-color: aqua;
-            background-color: blue;
+            background-color: rgb(255, 0, 0);
             color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
         }
         }
         /* for phone normal view*/
         @media(max-width:600px){
-            header{
-            width: 100vw;
-            min-height: 10%;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            overflow: hidden; 
-        }
         /* logo and name*/
         img{
-            width: 60px;
-            height: 70px;
-            margin-left: 7px;
+            width: 65px;
+            height: 65px;
         }
         /* nav & hover*/
         nav{
             display: flex;
             flex-direction: row;
+            margin-left: -5px;
         }
         li{
             list-style-type: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto 10px;
-            font-size: 1.1rem;
+            margin: auto 5px;
+            font-size: 1rem;
         }
         li a{
             text-decoration: none;
@@ -274,61 +236,49 @@
         }
         li a:hover{
             color: black;
-            padding: 2px;
+            padding: 10px;
             background-color: white;
         }
-        .new {
-            margin-right: -20px;
-        }
-       /* nav list*/
+        /* nav list*/
         .list{
-            display: block;
-            position: relative;
-            margin-left: -35px;
+            display: inline-block;
         }
         .child{
             position: absolute;
             display: none;
             background-color: white;
             z-index: 1;
-            width: 100%;
         }
         .child a{
             color: black;
-            font-size: 1rem;
             display: block;
-            text-align: center;
+            padding: 10px;
             transition: all 0.4s linear;
-            }
+        }
         .child a:hover{
-            background-color: white;
-            padding: 0 0px 0 0px;           
-            }
-        .list:hover .child{
+            color: white;
+            background-color: black;
+        }
+        .list:hover .child {
             display: block;
-            }        
+        }
         /* button & hover*/
         button{
-            font-weight: 700;
+            background-color: none;
             text-align: center;
-            font-size: 0.7rem;
-            margin-left: -7px;
-            margin-right: 7px;
             transition: all 0.4s linear 0s;
-            width: 60px;
         }
         button a{
             color: black;
             text-decoration: none;
+            font-size: 0.8rem;
         }
         button:hover{
             border: 2px solid;
-            border-radius: 5px;
+            border-radius: 10px;
             border-color: aqua;
             background-color: blue;
             color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
         }
         .contents{
             font-size: 1.2rem;
@@ -359,16 +309,17 @@
             </a>
             <div class="child">
                 <a href="https://phenoix13.github.io/cs-home-page/">B.SC.CS</a>
+                <a href="https://phenoix13.github.io/cs-home-page/">B.SC.IT</a>
             </div>
             </li>
             <li class="new"><a href="https://phenoix13.github.io/kasc-news/">
                 NEWS
             </a></li>
+        </nav>
             <button> 
                 <a href="mailto:teamphenoix13@gamil.com">CONTACT US
                 </a>
             </button>
-        </nav>
     </header>
     <hr>
     <section>
