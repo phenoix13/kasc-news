@@ -18,7 +18,7 @@
             height: 100vh;
         }
         header{
-            width: 99vw;
+            max-width: 100%;
             min-height: 10%;
             display: flex;
             justify-content: space-between; 
@@ -33,7 +33,7 @@
         img{
             width: 7rem;
             height: 7rem;
-            margin: 8px 0 8px 20px;
+            padding: 8px 0 8px 20px;
             align-items: center;
             justify-content: center;
         }
@@ -41,14 +41,13 @@
         nav{
             display: flex;
             flex-direction: row;
-            /* margin-left: 20rem; */
         }
         li{
             list-style-type: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto 40px;
+            margin: auto 1rem;
             font-size: 2.2rem;
         }
         li a{
@@ -110,6 +109,7 @@
         /*news*/
         section{
             color: white;
+            margin: 1.3rem;
         }
         .contents{
             font-size: 1.5rem;
@@ -137,147 +137,54 @@
         }
        
     /* for phone desktop*/
-    @media(max-width:900px){
+    @media(max-width:760px){
         img{
             width: 6.5rem;
             height: 6.5rem;
-            margin-left: 7px;
         }
         /* nav & hover*/
-        nav{
-            display: flex;
-            flex-direction: row;
-        }
         li{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto 9px;
             font-size: 1.5rem;
         }
-        li a{
-            text-decoration: none;
-            color: white;
-            transition: all 0.4s linear;
-        }
         li a:hover{
-            color: black;
             padding: 10px;
-            background-color: white;
-        }
-        /* nav list*/
-        .list{
-            display: inline-block;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-        }
-        .child a{
-            color: black;
-            display: block;
-            padding: 10px;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            color: white;
-            background-color: black;
-        }
-        .list:hover .child {
-            display: block;
         }
         /* button & hover*/
-        button{
-            text-align: center;
-            transition: all 0.4s linear 0s;
-        }
         button a{
-            color: black;
-            text-decoration: none;
             font-size: 1.1rem;
         }
         button:hover{
-            border: 2px solid;
-            border-radius: 10px;
-            border-color: aqua;
-            background-color: rgb(255, 0, 0);
-            color: white;
+            border-radius: 8px;
         }
         }
         /* for phone normal view*/
-        @media(max-width:600px){
+        @media(max-width:520px){
         /* logo and name*/
         img{
-            width: 65px;
-            height: 65px;
+            width: 55px;
+            height: 55px;
         }
         /* nav & hover*/
-        nav{
-            display: flex;
-            flex-direction: row;
-            margin-left: -5px;
-        }
         li{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto 5px;
-            font-size: 1rem;
-        }
-        li a{
-            text-decoration: none;
-            color: white;
-            transition: all 0.4s linear;
+            margin: auto 0.3rem;
+            font-size: 0.8rem;
         }
         li a:hover{
-            color: black;
-            padding: 10px;
-            background-color: white;
+            padding: 7px;
         }
         /* nav list*/
-        .list{
-            display: inline-block;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-        }
         .child a{
-            color: black;
-            display: block;
-            padding: 10px;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            color: white;
-            background-color: black;
-        }
-        .list:hover .child {
-            display: block;
+            padding: 7px;
         }
         /* button & hover*/
         button{
-            background-color: none;
-            text-align: center;
-            transition: all 0.4s linear 0s;
+            margin-right: 0.8rem;
         }
         button a{
-            color: black;
-            text-decoration: none;
             font-size: 0.5rem;
         }
         button:hover{
-            border: 2px solid;
-            border-radius: 10px;
-            border-color: aqua;
-            background-color: blue;
-            color: white;
+            border-radius: 7px;
         }
         .contents{
             font-size: 1.2rem;
@@ -314,11 +221,11 @@
             <li class="new"><a href="https://phenoix13.github.io/kasc-news/">
                 NEWS
             </a></li>
-        </nav>
             <button> 
                 <a href="mailto:teamphenoix13@gamil.com">CONTACT US
                 </a>
             </button>
+        </nav>
     </header>
     <hr>
     <section>
